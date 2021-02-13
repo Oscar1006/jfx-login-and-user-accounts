@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="508.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label text="Join to Classroom">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Create your Account">
+         <font>
+            <Font name="Bold Italic Art" size="25.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="439.0">
+         <children>
+            <Label text="Username:   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUserName">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="439.0">
+         <children>
+            <Label text="Password:   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="txtNewPassword">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="439.0">
+         <children>
+            <Label text="Profile photo:   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtImage">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#browseImage" text="Browse">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="439.0">
+         <children>
+            <Label text="Gender:   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="rbMale" mnemonicParsing="false" onAction="#genderSelected" text="Male   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <toggleGroup>
+                  <ToggleGroup fx:id="tgGender" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="rbFemale" mnemonicParsing="false" onAction="#genderSelected" text="Female   " toggleGroup="$tgGender">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="rbOther" mnemonicParsing="false" onAction="#genderSelected" text="Other   " toggleGroup="$tgGender">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </RadioButton>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="70.0" prefWidth="439.0">
+         <children>
+            <Label text="Career:   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <VBox alignment="CENTER_LEFT" prefHeight="70.0" prefWidth="173.0">
+               <children>
+                  <CheckBox mnemonicParsing="false" onAction="#careerSelected" text="Software Engineering">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#careerSelected" text="Telematic Engineering">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox mnemonicParsing="false" onAction="#careerSelected" text="Industrial Engineering">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="439.0">
+         <children>
+            <Label text="Birthday:   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="dpBirthday" editable="false" onAction="#selectDate" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="50.0" prefWidth="439.0">
+         <children>
+            <Label text="Favorite Browser:   ">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combBrowser" onAction="#browserSelected" prefWidth="150.0" promptText="Choose an option" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
