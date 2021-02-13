@@ -119,7 +119,7 @@ public class ClassroomGUI {
 
 	@FXML
 	void createAccount(ActionEvent event) {
-		classroom.addAccount(txtUserName.getText(), txtNewPassword.getText(), photo, gender, career, birthday, browser);
+		classroom.addAccount(txtUserName.getText(), txtNewPassword.getText(), photo, gender, career, dpBirthday.getText(), browser);
 	}
 
 	@FXML

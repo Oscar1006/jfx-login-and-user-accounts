@@ -147,5 +147,10 @@
             <ComboBox fx:id="combBrowser" onAction="#browserSelected" prefWidth="150.0" promptText="Choose an option" />
          </children>
       </HBox>
+      <Button mnemonicParsing="false" text="Create">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
    </children>
 </VBox>
